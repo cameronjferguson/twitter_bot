@@ -16,8 +16,7 @@ def retweeter(api, screen_name1):
                            # 200 is the maximum allowed count
                            count=5,
                            include_rts = False,
-                           # Necessary to keep full_text 
-                           # otherwise only the first 140 words are extracted
+                           # Ensures that tweets over 140 chars are included fully
                            tweet_mode = 'extended'
                            )
 	for tweet in tweets:
