@@ -11,7 +11,7 @@ An automated Twitter bot that likes and retweets from a list of Twitter accounts
 auth = tweepy.OAuthHandler('API Key','API Key Secret')
 auth.set_access_token('Access Token','Access Token Secret')
 ```
-5. Replace 'ScreenName1' and "ScreenName2' with the screen names of users you wish to auto retweet and like. Just add to the list if you have more than 2 users you'd like to auto retweet and like their tweets.
+5. Replace 'ScreenName1' and "ScreenName2' with the screen names of users you wish to auto retweet and like. Just add to the list if you have more than 2 users you'd like to auto retweet and like their tweets. A twitter accounts stream name is their @ but without the @. For example mine is @BuzzRW, so you would enter 'BuzzRW' in the list.
 ```
 MemberList = ['ScreenName1', 'ScreenName2']
 ```
