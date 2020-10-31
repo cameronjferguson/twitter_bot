@@ -21,11 +21,12 @@ def retweeter(api, screen_name1):
                            tweet_mode = 'extended'
                            )
 	for tweet in tweets:
+		#Good for checking and logging
 		#print("ID: {}".format(tweet.id))
 		#print(tweet.created_at)
 		#print(tweet.full_text)
 
-
+		#if you turn retweets to true or want to avoid retweet replies un comment this section
 		#if tweet.in_reply_to_status_id is not None or \
 		#	tweet.user.id == api.me().id:
 		#	return
@@ -39,11 +40,9 @@ def retweeter(api, screen_name1):
 			tweet.retweet()
 		#print("\n")
 
-#retweeter(api, "BuzzRw")
-
 def retweeterList():
-	rwMemberList = ['ScreenName1', 'ScreenName2']
-	for member in rwMemberList:
+	MemberList = ['ScreenName1', 'ScreenName2']
+	for member in MemberList:
 		retweeter(api, member)
 		print('checked for new ', member, ' tweets')
 
